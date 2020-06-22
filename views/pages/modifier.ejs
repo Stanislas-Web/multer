@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bullectronic </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top" style="background-color:#324972">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-right">
+						<p class="num"></p>
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href='/bullectronic/Accueil'><img src="/assets/images/logotfc.png"><span></span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+<hr>
+		<!-- END map -->
+	
+	<div id="fh5co-contact">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6 animate-box">
+					<h3>Modifier <strong><%= ecole.nomEcole%></strong></h3>
+					<form action="/bullectronic/modifier/<%= ecole.idEcole %>" enctype="multipart/form-data" method="post"  >
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input name="nomEcole" type="text" id="email" class="form-control" placeholder="Nom de l'Ecole" value="<%= ecole.nomEcole%>" required>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<select name="categorieEcole" type="text" id="email"  class="form-control">
+									<option><%= ecole.categorieEcole%></option>
+									<option>Conventionnée Kimbanguiste</option>
+									<option>Conventionnée Catholique</option>
+									<option>Conventionnée Protestante </option>
+									<option>Privée Agrée</option>
+									<option>Public</option>
+									
+								</select>
+								
+							</div>
+						</div>
+
+						<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="subject">Subject</label> -->
+									<input name="communeEcole" type="text" id="subject" class="form-control" placeholder="Commune Ecole" value="<%= ecole.communeEcole %>" required>
+								</div>
+						</div>
+
+						<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="subject">Subject</label> -->
+									<input name="quartierEcole" type="text" id="subject" class="form-control" placeholder="quartier Ecole" value="<%= ecole.quartierEcole %>" required>
+								</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<input name="avenueEcole" type="text" id="subject" class="form-control" placeholder="avenue Ecole" value="<%= ecole.avenueEcole %>" required>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<input name="numeroEcole" type="text" id="subject" class="form-control" value="<%= ecole.numeroEcole %>" placeholder="numero Ecole"  required>
+							</div>
+						</div>
+
+						<style>
+							#file {
+								display: none;
+							}
+							label {
+								margin: auto;
+								padding: 5px 5px 5px 5px;
+								background: #576680;
+								color : #ffffff;
+								border-radius: 10px;
+							}
+						   </style>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<label for="file">Choisir une photo</label>
+								<input name="logoEcole" type="file"  id="file" >
+							</div>
+						</div>
+<br><br>
+						<div class="form-group">
+							<input name="connexion" type="submit" value="Modifier" class="btn btn-primary" style="background-color:#324972;border:none;">
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(/assets/images/img_bg_1.jpg);" role="contentinfo">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h3>A Propos de Bullectronic </h3>
+					<p>Bullectronic est une plateforme pour la signature des Bulletins Scolaires en République Démocratique du Congo</p>
+					</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2019 UltraTECH</small> 
+						<small class="block">Designed by <a href="#" target="_blank" style="color:#324972">Stanislas</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter" style="color:#324972"></i></a></li>
+							<li><a href="#"><i class="icon-facebook" style="color:#324972"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin" style="color:#324972"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble" style="color:#324972"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="/assets/js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	<!-- jQuery -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/assets/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="/assets/js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="/assets/js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="/assets/js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="/assets/js/magnific-popup-options.js"></script>
+	<!-- Google Map -->
+	<script src="/assets/js/google_map.js"></script>
+	<!-- Main -->
+	<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
